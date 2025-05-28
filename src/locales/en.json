@@ -1,0 +1,170 @@
+{
+  "nav": {
+    "home": "Home",
+    "hydrogenLife": "Hydrogen Life",
+    "humans": "Humans",
+    "animals": "Animals",
+    "plants": "Plants",
+    "products": "Products",
+    "scientific": "Scientific",
+    "certifications": "Certifications",
+    "about": "About",
+    "contact": "Contact"
+  },
+  "hero": {
+    "slide1Title": "Discover the Power of Molecular Hydrogen",
+    "slide1Subtitle": "Revitalizing hydrogen for better health and wellness",
+    "slide2Title": "Revitalizing Power",
+    "slide2Subtitle": "Discover the benefits of molecular hydrogen",
+    "slide3Title": "Revitalizing Power",
+    "slide3Subtitle": "Discover the benefits of molecular hydrogen",
+    "slide4Title": "Revitalizing Power",
+    "slide4Subtitle": "Discover the benefits of molecular hydrogen",
+    "shopNow": "Shop Now",
+    "learnMore": "Learn More"
+  },
+  "healthBenefits": {
+    "title": "Health Benefits",
+    "subtitle": "Discover how molecular hydrogen can improve your health",
+    "benefits": [
+      {
+        "title": "Improved Athletic Performance",
+        "description": "Increased endurance and faster recovery for athletes"
+      },
+      {
+        "title": "Improved Metabolic Health",
+        "description": "Support for healthy metabolism and energy production"
+      },
+      {
+        "title": "Improved Liver Function",
+        "description": "Support for liver health and natural detoxification"
+      },
+      {
+        "title": "Dialysis Support",
+        "description": "Support for patients undergoing dialysis treatment"
+      },
+      {
+        "title": "Cancer Prevention",
+        "description": "Potential anti-cancer properties through antioxidant action"
+      }
+    ]
+  },
+  "westMacedonia": {
+    "title": "West Macedonia",
+    "description": "West Macedonia is a region of Greece known for its rich mineral waters and springs. The area is ideal for hydrogen production due to its unique geological structure and natural resources.",
+    "milestones": [
+      {
+        "date": "2020",
+        "description": "Started research on water sources in West Macedonia"
+      },
+      {
+        "title": "Source Discovery",
+        "description": "Identification of multiple sources with high mineral content"
+      },
+      {
+        "title": "Technology Development",
+        "description": "Development of new technology for hydrogen extraction from sources"
+      }
+    ]
+  },
+  "transportation": {
+    "sectionTitle": "Transportation",
+    "mainTitle": "How to Reach West Macedonia",
+    "mainDescription": "West Macedonia is easily accessible through various modes of transportation. From flights to driving, you can choose the way that suits you best.",
+    "features": [
+      {
+        "title": "Flights",
+        "date": "Daily",
+        "description": "Kastoria Airport offers daily flights from Athens and Thessaloniki. There are also seasonal flights from various European cities."
+      },
+      {
+        "title": "Car",
+        "description": "The region is well connected to the national road network. You can reach it from Athens in about 6 hours and from Thessaloniki in about 2 hours."
+      },
+      {
+        "title": "Buses",
+        "description": "There are regular bus services from major Greek cities to West Macedonia."
+      },
+      {
+        "title": "Trains",
+        "description": "The rail network connects West Macedonia with other regions of Greece."
+      },
+      {
+        "title": "Local Transport",
+        "description": "There are taxis and local buses for transportation within the region."
+      },
+      {
+        "title": "Future Outlook",
+        "points": [
+          "Breathing Cleaner Air: Enhanced oxygenation for the brain and body",
+          "Holistic Health: A balance between environment and well-being",
+          "Preventive Care: Reducing chronic illnesses through clean technologies"
+        ]
+      },
+      {
+        "title": "Important Information",
+        "points": [
+          "Check flight times before your trip",
+          "Book your car in advance during peak season",
+          "Stay informed about weather conditions"
+        ]
+      }
+    ],
+    "conclusion": "Choose the mode of transportation that suits you best and enjoy your journey to West Macedonia!"
+  },
+  "products": {
+    "title": "Our Products",
+    "subtitle": "Discover our range of innovative hydrogenated water solutions for every need",
+    "buyButton": "Buy",
+    "items": [
+      {
+        "name": "HydroPure Elite Bottle",
+        "description": "Advanced hydrogenated water bottle with titanium plates",
+        "price": "299.99",
+        "image": "https://images.unsplash.com/photo-1602143407151-7111542de6e8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80",
+        "features": ["2.0 ppm H2", "Titanium plates", "USB-C charging", "500ml capacity"],
+        "tag": "Best Seller"
+      },
+      {
+        "name": "HydroMax Pro Generator",
+        "description": "Professional hydrogenated water generator for home use",
+        "price": "499.99",
+        "image": "https://images.unsplash.com/photo-1548839140-29a749e1cf4d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80",
+        "features": ["3.0 ppm H2", "Touch screen", "Large capacity", "Filter included"],
+        "tag": "New"
+      },
+      {
+        "name": "HydroFit Sports Bottle",
+        "description": "Portable hydrogenated water bottle for athletes",
+        "price": "249.99",
+        "image": "https://images.unsplash.com/photo-1523362628745-0c100150b504?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80",
+        "features": ["1.8 ppm H2", "Sports design", "Quick charge", "Durable build"],
+        "tag": "Popular"
+      },
+      {
+        "name": "HydroLife Premium System",
+        "description": "Complete hydrogenated water system for your home",
+        "price": "899.99",
+        "image": "https://images.unsplash.com/photo-1581244277943-fe4a9c777189?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80",
+        "features": ["4.0 ppm H2", "Whole house system", "Smart features", "Professional installation"],
+        "tag": "Premium"
+      },
+      {
+        "name": "HydroMini Travel Kit",
+        "description": "Compact hydrogen generator for travel",
+        "price": "199.99",
+        "image": "https://images.unsplash.com/photo-1556228720-195a672e8a03?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80",
+        "features": ["1.5 ppm H2", "Ultra-portable", "Travel case", "300ml capacity"],
+        "tag": "Travel Essential"
+      },
+      {
+        "name": "HydroWell Dispenser",
+        "description": "Desktop hydrogenated water dispenser for office use",
+        "price": "399.99",
+        "image": "https://images.unsplash.com/photo-1575537302964-96cd47c06b1b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80",
+        "features": ["2.5 ppm H2", "Office design", "Large tank", "Quick dispensing"],
+        "tag": "Office Choice"
+      }
+    ]
+  }
+} 
