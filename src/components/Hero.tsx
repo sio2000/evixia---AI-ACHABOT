@@ -79,32 +79,32 @@ const Hero = () => {
       {/* Navigation Arrows */}
       <button 
         onClick={prevSlide} 
-        className="absolute left-6 z-20 bg-black/20 hover:bg-black/40 p-3 rounded-full transition-all duration-300"
+        className="absolute left-2 sm:left-6 z-20 bg-black/20 hover:bg-black/40 p-2 sm:p-3 rounded-full transition-all duration-300"
         aria-label="Previous slide"
       >
-        <ChevronLeft className="w-10 h-10 text-white/80" />
+        <ChevronLeft className="w-6 h-6 sm:w-10 sm:h-10 text-white/80" />
       </button>
       
       <button 
         onClick={nextSlide} 
-        className="absolute right-6 z-20 bg-black/20 hover:bg-black/40 p-3 rounded-full transition-all duration-300"
+        className="absolute right-2 sm:right-6 z-20 bg-black/20 hover:bg-black/40 p-2 sm:p-3 rounded-full transition-all duration-300"
         aria-label="Next slide"
       >
-        <ChevronRight className="w-10 h-10 text-white/80" />
+        <ChevronRight className="w-6 h-6 sm:w-10 sm:h-10 text-white/80" />
       </button>
 
       {/* Content */}
       <div className="relative z-10 text-center text-white px-4 max-w-5xl mx-auto">
-        <div className="min-h-[300px] flex items-center justify-center">
+        <div className="min-h-[200px] sm:min-h-[300px] flex items-center justify-center">
           <div className="transition-all duration-500" 
               style={{ 
                 opacity: 1,
                 transform: 'translateY(0)'
               }}>
-            <h1 className="text-5xl md:text-6xl font-bold mb-8">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4 sm:mb-8 px-2">
               {slides[activeSlide].title}
             </h1>
-            <p className="text-xl md:text-2xl mb-24 max-w-3xl mx-auto">
+            <p className="text-lg sm:text-xl md:text-2xl mb-12 sm:mb-24 max-w-3xl mx-auto px-2">
               {slides[activeSlide].subtitle}
             </p>
           </div>
@@ -112,40 +112,34 @@ const Hero = () => {
         
         {/* Regular buttons for most slides */}
         {slides[activeSlide].showButtons && (
-          <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12 mt-24">
+          <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8 sm:mb-12 mt-12 sm:mt-24 px-4">
             <button 
               onClick={() => navigate('/contact')}
-              className="px-8 py-3 bg-[#D89084] hover:bg-[#c27e72] text-white rounded-full font-semibold transition-colors duration-300 transform hover:scale-105"
+              className="w-full sm:w-auto px-6 sm:px-8 py-2 sm:py-3 bg-[#D89084] hover:bg-[#c27e72] text-white rounded-full font-semibold transition-colors duration-300 transform hover:scale-105 text-sm sm:text-base"
             >
               {t('hero.contactUs')}
-            </button>
-            <button 
-              onClick={() => navigate('/products')}
-              className="px-8 py-3 bg-transparent border-2 border-white hover:bg-white/10 text-white rounded-full font-semibold transition-all duration-300 transform hover:scale-105"
-            >
-              {t('hero.ourProducts')}
             </button>
           </div>
         )}
 
         {/* Special buttons for Health & Environmental Benefits slide */}
         {slides[activeSlide].specialButtons && (
-          <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12 mt-24">
+          <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8 sm:mb-12 mt-12 sm:mt-24 px-4">
             <button 
               onClick={() => navigate('/humans')}
-              className="px-8 py-3 bg-[#D89084] hover:bg-[#c27e72] text-white rounded-full font-semibold transition-colors duration-300 transform hover:scale-105"
+              className="w-full sm:w-auto px-6 sm:px-8 py-2 sm:py-3 bg-[#D89084] hover:bg-[#c27e72] text-white rounded-full font-semibold transition-colors duration-300 transform hover:scale-105 text-sm sm:text-base"
             >
               {t('hero.humans')}
             </button>
             <button 
               onClick={() => navigate('/animals')}
-              className="px-8 py-3 bg-[#D89084] hover:bg-[#c27e72] text-white rounded-full font-semibold transition-colors duration-300 transform hover:scale-105"
+              className="w-full sm:w-auto px-6 sm:px-8 py-2 sm:py-3 bg-[#D89084] hover:bg-[#c27e72] text-white rounded-full font-semibold transition-colors duration-300 transform hover:scale-105 text-sm sm:text-base"
             >
               {t('hero.animals')}
             </button>
             <button 
               onClick={() => navigate('/plants')}
-              className="px-8 py-3 bg-[#D89084] hover:bg-[#c27e72] text-white rounded-full font-semibold transition-colors duration-300 transform hover:scale-105"
+              className="w-full sm:w-auto px-6 sm:px-8 py-2 sm:py-3 bg-[#D89084] hover:bg-[#c27e72] text-white rounded-full font-semibold transition-colors duration-300 transform hover:scale-105 text-sm sm:text-base"
             >
               {t('hero.plants')}
             </button>

@@ -1,6 +1,5 @@
 import React, { useEffect } from 'react';
 import Hero from '../components/Hero';
-import Products from '../components/Products';
 import Scientific from '../components/Scientific';
 import About from '../components/About';
 import Certifications from '../components/Certifications';
@@ -24,7 +23,6 @@ const HomePage = () => {
       <HealthBenefits />
       <WestMacedonia />
       <Transportation />
-      <Products />
       <Scientific />
       <EUStrategy />
       <About />

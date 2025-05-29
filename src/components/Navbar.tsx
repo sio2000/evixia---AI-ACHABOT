@@ -1,12 +1,13 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { ShoppingCart, User, Globe } from 'lucide-react';
+import { ShoppingCart, User, Globe, Menu as MenuIcon, X } from 'lucide-react';
 import { Menu } from '@headlessui/react';
 import { useTranslation } from 'react-i18next';
 import logo from '../../assets/images/logo.png';
 
 const Navbar = () => {
   const { t, i18n } = useTranslation();
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   const toggleLanguage = () => {
     const newLang = i18n.language === 'en' ? 'el' : 'en';
@@ -26,10 +27,11 @@ const Navbar = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-16">
           <div className="flex items-center">
-            <img src={logo} alt="Logo" className="h-10 w-10 mr-2" />
-            <Link to="/" className="text-2xl font-bold text-sky-600">Hydrogen Developments</Link>
+            <img src={logo} alt="Logo" className="h-8 w-8 sm:h-10 sm:w-10 mr-2" />
+            <Link to="/" className="text-xl sm:text-2xl font-bold text-sky-600">Hydrogen Developments</Link>
           </div>
           
+          {/* Desktop Menu */}
           <div className="hidden md:flex items-center space-x-8">
             <Link to="/" className="text-gray-700 hover:text-sky-600">{t('nav.home')}</Link>
             
@@ -102,18 +104,17 @@ const Navbar = () => {
                 </div>
               </Menu.Items>
             </Menu>
-            <Link to="/products" className="text-gray-700 hover:text-sky-600">{t('nav.products')}</Link>
             <Link to="/contact" className="text-gray-700 hover:text-sky-600">{t('nav.contact')}</Link>
           </div>
 
-          <div className="flex items-center space-x-4">
+          <div className="flex items-center space-x-2 sm:space-x-4">
             <button 
               onClick={toggleLanguage}
-              className="p-2 text-gray-600 hover:text-sky-600 flex items-center space-x-1 border rounded-md"
+              className="p-1.5 sm:p-2 text-gray-600 hover:text-sky-600 flex items-center space-x-1 border rounded-md"
               title={i18n.language === 'en' ? 'Αλλαγή σε Ελληνικά' : 'Switch to English'}
             >
-              <Globe className="h-5 w-5" />
-              <span className="text-sm font-medium">
+              <Globe className="h-4 w-4 sm:h-5 sm:w-5" />
+              <span className="text-xs sm:text-sm font-medium">
                 {i18n.language === 'en' ? (
                   <span className="flex items-center">
                     <span className="mr-1">🇬🇧</span>
@@ -127,15 +128,77 @@ const Navbar = () => {
                 )}
               </span>
             </button>
-            <button className="p-2 text-gray-600 hover:text-sky-600">
-              <ShoppingCart className="h-6 w-6" />
-            </button>
-            <button className="p-2 text-gray-600 hover:text-sky-600">
-              <User className="h-6 w-6" />
+            {/* Mobile menu button */}
+            <button
+              onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+              className="md:hidden p-1.5 text-gray-600 hover:text-sky-600"
+            >
+              {isMobileMenuOpen ? (
+                <X className="h-6 w-6" />
+              ) : (
+                <MenuIcon className="h-6 w-6" />
+              )}
             </button>
           </div>
         </div>
       </div>
+
+      {/* Mobile Menu */}
+      {isMobileMenuOpen && (
+        <div className="md:hidden bg-white border-t">
+          <div className="px-2 pt-2 pb-3 space-y-1">
+            <Link
+              to="/"
+              className="block px-3 py-2 text-base font-medium text-gray-700 hover:text-sky-600 hover:bg-gray-50 rounded-md"
+              onClick={() => setIsMobileMenuOpen(false)}
+            >
+              {t('nav.home')}
+            </Link>
+            <Link
+              to="/hydrogenated-water"
+              className="block px-3 py-2 text-base font-medium text-gray-700 hover:text-sky-600 hover:bg-gray-50 rounded-md"
+              onClick={() => setIsMobileMenuOpen(false)}
+            >
+              {t('nav.hydrogenWater')}
+            </Link>
+            <Link
+              to="/humans"
+              className="block px-3 py-2 text-base font-medium text-gray-700 hover:text-sky-600 hover:bg-gray-50 rounded-md"
+              onClick={() => setIsMobileMenuOpen(false)}
+            >
+              {t('nav.humans')}
+            </Link>
+            <Link
+              to="/animals"
+              className="block px-3 py-2 text-base font-medium text-gray-700 hover:text-sky-600 hover:bg-gray-50 rounded-md"
+              onClick={() => setIsMobileMenuOpen(false)}
+            >
+              {t('nav.animals')}
+            </Link>
+            <Link
+              to="/plants"
+              className="block px-3 py-2 text-base font-medium text-gray-700 hover:text-sky-600 hover:bg-gray-50 rounded-md"
+              onClick={() => setIsMobileMenuOpen(false)}
+            >
+              {t('nav.plants')}
+            </Link>
+            <Link
+              to="/industry"
+              className="block px-3 py-2 text-base font-medium text-gray-700 hover:text-sky-600 hover:bg-gray-50 rounded-md"
+              onClick={() => setIsMobileMenuOpen(false)}
+            >
+              {t('nav.industry')}
+            </Link>
+            <Link
+              to="/contact"
+              className="block px-3 py-2 text-base font-medium text-gray-700 hover:text-sky-600 hover:bg-gray-50 rounded-md"
+              onClick={() => setIsMobileMenuOpen(false)}
+            >
+              {t('nav.contact')}
+            </Link>
+          </div>
+        </div>
+      )}
     </nav>
   );
 };

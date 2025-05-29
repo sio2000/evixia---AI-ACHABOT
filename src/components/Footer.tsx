@@ -9,7 +9,7 @@ const Footer = () => {
   const footerContent = {
     el: {
       company: {
-        title: "Hydrogenlife",
+        title: "Hydrogen Developments",
         description: "Αφοσιωμένοι στην παροχή προϊόντων υδρογονωμένου νερού υψηλής ποιότητας."
       },
       quickLinks: {
@@ -17,7 +17,6 @@ const Footer = () => {
         links: [
           { text: "Αρχική", href: "/" },
           { text: "Υδρογονωμένο Νερό", href: "/hydrogen-water" },
-          { text: "Προϊόντα", href: "/products" },
           { text: "Επικοινωνία", href: "/contact" }
         ]
       },
@@ -33,7 +32,7 @@ const Footer = () => {
     },
     en: {
       company: {
-        title: "Hydrogenlife",
+        title: "Hydrogen Developments",
         description: "Committed to delivering the highest quality hydrogenated water products."
       },
       quickLinks: {
@@ -41,7 +40,6 @@ const Footer = () => {
         links: [
           { text: "Home", href: "/" },
           { text: "Hydrogen Water", href: "/hydrogen-water" },
-          { text: "Products", href: "/products" },
           { text: "Contact", href: "/contact" }
         ]
       },
@@ -61,20 +59,20 @@ const Footer = () => {
 
   return (
     <footer className="bg-gray-900 text-white">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
           <div>
-            <h3 className="text-xl font-bold mb-4">{content.company.title}</h3>
-            <p className="text-gray-400">
+            <h3 className="text-lg sm:text-xl font-bold mb-3 sm:mb-4">{content.company.title}</h3>
+            <p className="text-sm sm:text-base text-gray-400">
               {content.company.description}
             </p>
           </div>
           <div>
-            <h4 className="text-lg font-semibold mb-4">{content.quickLinks.title}</h4>
+            <h4 className="text-base sm:text-lg font-semibold mb-3 sm:mb-4">{content.quickLinks.title}</h4>
             <ul className="space-y-2">
               {content.quickLinks.links.map((link, index) => (
                 <li key={index}>
-                  <a href={link.href} className="text-gray-400 hover:text-white transition-colors">
+                  <a href={link.href} className="text-sm sm:text-base text-gray-400 hover:text-white transition-colors">
                     {link.text}
                   </a>
                 </li>
@@ -82,8 +80,8 @@ const Footer = () => {
             </ul>
           </div>
           <div>
-            <h4 className="text-lg font-semibold mb-4">{content.contact.title}</h4>
-            <p className="text-gray-400">
+            <h4 className="text-base sm:text-lg font-semibold mb-3 sm:mb-4">{content.contact.title}</h4>
+            <p className="text-sm sm:text-base text-gray-400">
               {content.contact.phone}: 
               <a 
                 href="tel:+306980900300" 
@@ -95,29 +93,29 @@ const Footer = () => {
                 </button>
               </a>
             </p>
-            <p className="text-gray-400">{content.contact.email}: info@hydrogenlife.com</p>
+            <p className="text-sm sm:text-base text-gray-400 mt-2">{content.contact.email}: info@hydrogenlife.com</p>
           </div>
           <div>
-            <h4 className="text-lg font-semibold mb-4">{content.newsletter.title}</h4>
+            <h4 className="text-base sm:text-lg font-semibold mb-3 sm:mb-4">{content.newsletter.title}</h4>
             <div className="flex">
               <input
                 type="email"
                 placeholder={content.newsletter.placeholder}
-                className="px-4 py-2 rounded-l-md w-full text-gray-900"
+                className="px-3 sm:px-4 py-2 rounded-l-md w-full text-sm sm:text-base text-gray-900"
               />
-              <button className="bg-sky-600 px-4 py-2 rounded-r-md hover:bg-sky-700">
-                <Mail className="h-5 w-5" />
+              <button className="bg-sky-600 px-3 sm:px-4 py-2 rounded-r-md hover:bg-sky-700">
+                <Mail className="h-4 w-4 sm:h-5 sm:w-5" />
               </button>
             </div>
-            <div className="flex space-x-4 mt-6">
+            <div className="flex space-x-4 mt-4 sm:mt-6">
               <a href="#" className="text-gray-400 hover:text-white transition-colors">
-                <Facebook className="h-6 w-6" />
+                <Facebook className="h-5 w-5 sm:h-6 sm:w-6" />
               </a>
               <a href="#" className="text-gray-400 hover:text-white transition-colors">
-                <Instagram className="h-6 w-6" />
+                <Instagram className="h-5 w-5 sm:h-6 sm:w-6" />
               </a>
               <a href="#" className="text-gray-400 hover:text-white transition-colors">
-                <Twitter className="h-6 w-6" />
+                <Twitter className="h-5 w-5 sm:h-6 sm:w-6" />
               </a>
             </div>
           </div>
